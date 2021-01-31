@@ -3,9 +3,10 @@
         <mat-card-title>{{ game.name }}</mat-card-title>
         <mat-card-header>{{ game.desc }}</mat-card-header>
         <mat-card-actions>
-            <a [href]="game.url">
-                <button mat-button>Go To Website</button>
+            <a [href]="game.url" *ngIf="game.url != ''">
+                <button mat-raised-button color="basic">Go To Website</button>
             </a>
+            <button *ngIf="game.url == ''" [routerLink]="game.url" color="basic" mat-raised-button>Go To Website</button>
         </mat-card-actions>
     </mat-card>
 </div>
