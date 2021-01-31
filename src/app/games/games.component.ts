@@ -12,8 +12,8 @@ export class GamesComponent implements OnInit {
 
   constructor() {
     this.games = [
-      { name: "Apophis", url: "", desc: "xD" },
-      { name: "Project Urban", url: "", desc: "xD" },
+      { name: "Apophis", url: "https://apophis.dev", desc: "Dark mystery set in a sinister world, where you have to risk your life to gain even the smallest piece to a vast puzzle." },
+      { name: "Project Urban", url: "", desc: "New, not presented game" },
     ];
   }
 

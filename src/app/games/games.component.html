@@ -3,7 +3,9 @@
         <mat-card-title>{{ game.name }}</mat-card-title>
         <mat-card-header>{{ game.desc }}</mat-card-header>
         <mat-card-actions>
-            <button mat-button>Go To Website</button>
+            <a [href]="game.url">
+                <button mat-button>Go To Website</button>
+            </a>
         </mat-card-actions>
     </mat-card>
 </div>
