@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ggent-83762": {
+      "hosting": {
+        "GGE": [
+          "ggent-83762"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "gge": "ggent-83762"
+  }
+}
