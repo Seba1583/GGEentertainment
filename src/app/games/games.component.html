@@ -1,12 +1,21 @@
 <div id="container">
-    <mat-card *ngFor="let game of games">
-        <mat-card-title>{{ game.name }}</mat-card-title>
-        <mat-card-header>{{ game.desc }}</mat-card-header>
+    <mat-card>
+        <mat-card-title>Apophis</mat-card-title>
+        <mat-card-header>Dark mystery set in a sinister world, where you have to risk your life to gain even the smallest piece to a vast puzzle</mat-card-header>
+        <mat-card-content>
+            <iframe src="https://itch.io/embed/756498?bg_color=000000&amp;fg_color=b0b0b0&amp;link_color=ae0c0c&amp;border_color=000000" width="100%" height="100%" frameborder="0"><a href="https://apophisdev.itch.io/apophis">APOPHIS by GGEntertainment</a></iframe>
+        </mat-card-content>
         <mat-card-actions>
-            <a [href]="game.url" *ngIf="game.url != ''">
+            <a href="https://apophis.dev">
                 <button mat-raised-button color="basic">Go To Website</button>
             </a>
-            <button *ngIf="game.url == ''" [routerLink]="game.url" color="basic" mat-raised-button>Go To Website</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card>
+        <mat-card-title>Project Urban</mat-card-title>
+        <mat-card-header>New, not presented game</mat-card-header>
+        <mat-card-actions>
+            <button routerLink="games" color="basic" mat-raised-button>Go To Website</button>
         </mat-card-actions>
     </mat-card>
 </div>
