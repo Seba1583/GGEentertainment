@@ -6,10 +6,10 @@ import { GamesComponent } from './games/games.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  {path: '', component: MainComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'games', component: GamesComponent},
-  {path: 'contact', component: ContactComponent},
+  {path: '', component: MainComponent, data: {animation: '0'}},
+  {path: 'about', component: AboutComponent, data: {animation: '1'}},
+  {path: 'games', component: GamesComponent, data: {animation: '2'}},
+  {path: 'contact', component: ContactComponent, data: {animation: '3'}},
 ]
 
 
